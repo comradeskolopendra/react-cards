@@ -80,6 +80,7 @@
     flex-direction: row;
     width: 100%;
     transition: opacity 0.3s ease-in-out;
+    margin-top: 10px;
 }
 
 .containerSum {
@@ -145,7 +146,7 @@
     width: 80%;
     height: 2px;
     position: absolute;
-    top: 20px;
+    top: 40px;
 }
 
 .containerProgress {
@@ -167,6 +168,18 @@
 
 .containerText {
     margin-top: 35px;
+}
+
+.containerInnerContent {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.containerShowButton {
+    display: none;
 }
 
 @media screen and (max-width: 1024px) {
