@@ -1,20 +1,30 @@
 import React from "react";
-import "../styles/CardMedium.css";
+import styles from "../styles/CardMedium.module.css";
 
 const CardMedium = (props) => {
     return(
-        <div className="cardMeduim">
-            <div className="containerImage">
-                <img src={props.props.image} alt="lottery" className="imageLottery"/>
+        <div className={styles.cardMeduim}>
+            <div className={styles.containerInnerContent}>
+                <div className={styles.containerHeader}>
+                    <div className={styles.containerImage}>
+                        <img src={props.props.image} alt="lottery" className={styles.imageLottery}/>
+                    </div>
+                    <div className={styles.containerText}>
+                        <h2 className={styles.cardTitle}>{props.props.title}</h2>
+                        <p className={styles.cardParagraph}>{props.props.bodyShadow}</p>
+                    </div>
+                </div>
+                <div className={styles.containerBtns}>
+                    <button className={styles.getIn}>Участвовать</button>
+                    <button className={styles.circulation}>Последние тиражы</button>
+                </div>
+                <div className={styles.containerProgress}>
+                    <progress className={styles.progress} value="100" max="100"></progress>
+                </div>
             </div>
-            <h2 className="cardTitle">{props.props.title}</h2>
-            <p className="cardParagraph">{props.props.bodyShadow}</p>
-            <div className="containerBtns">
-                <button className="getIn">Участвовать</button>
-                <button className="circulation">Последние тиражы</button>
-            </div>
-            <div className="containerProgress">
-                <progress value="100" max="100"></progress>
+            <div className={styles.borderRight}></div>
+            <div className={styles.containerShowButton}>
+                <button className={styles.showButton}>Стр</button>
             </div>
         </div>
     );

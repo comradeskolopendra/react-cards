@@ -1,0 +1,205 @@
+.cardTitle {
+    font-size: 1rem;
+    font-family: Lato,sans-serif;
+    line-height: 1.5;
+    letter-spacing: .3px;
+    letter-spacing: .01875rem;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    text-transform: none;
+    text-align: center;
+    color: #fff;
+    margin: 0;
+}
+
+.cardParagraph {
+    text-align: center;
+    color: hsla(0,0%,100%,.5);
+    font-size: .875rem;
+    line-height: 1.43;
+    margin: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    box-sizing: border-box;
+    font-family: Lato,sans-serif;
+}
+
+.cardMeduim {
+    width: 100%;
+    height: 345px;
+    background-color: #2063b2;
+    border-radius: 5px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.imageLottery {
+    max-width: 60%;
+    display: block;
+    max-height: 100%;
+    height: 105px;
+}
+
+.containerImage {
+    height: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress::-webkit-progress-value, progress::-moz-progress-bar {
+    background: white;
+    border-radius: 25px;
+}
+.progress {
+    margin-top: 15px;
+    border-radius: 25px;
+    width: 80%;
+    height: 2px;
+}
+
+.containerProgress {
+    height: 1%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    /* margin-top: 35px; */
+}
+
+.containerBtns {
+    opacity: 0;
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    transition: opacity 0.1s ease-out;
+    width: 73%;
+}
+
+.getIn {
+    width: 120px;
+    border-radius: 5px;
+    background-color: #ffe200;
+    border: none;
+    height: 40px;
+    cursor: pointer;
+    font-size: 0.875rem;
+}
+
+.getIn:hover {
+    background-color: #ffe366;
+}
+
+.circulation {
+    background: transparent;
+    color: #fff;
+    border: 1px solid #ffe366;
+    width: 180px;
+    height: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+    font-size: 0.875rem;
+}
+
+.circulation:hover {
+    color: rgba(255, 255, 255, 0.5)
+}
+
+.cardMeduim:hover .containerBtns {
+    opacity: 1;
+}
+
+.containerText {
+    margin-top: 35px;
+}
+
+@media screen and (max-width: 1024px) {
+    .containerHeader {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .containerText {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+        /* text-align: left; */
+    }
+
+    .containerProgress {
+        position: relative;
+    }
+
+    .progress {
+        width: 95%;
+        position: absolute;
+        top: 5px;
+    }
+
+    .cardMeduim {
+        margin: 10px auto;
+        width: 100%;
+        height: 112px;
+        flex-direction: row;
+    }
+
+    .containerInnerContent {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .containerBtns {
+        display: none;
+    }
+
+    .containerImage {
+        height: 30px;
+        padding: 10px 15px;
+        width: 70px;
+    }
+
+    .containerHeader {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .cardTitle {
+        text-align: left;
+    }
+
+    .cardParagraph {
+        text-align: left;
+    }
+
+    .containerShowButton {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 75px;
+        height: 100%;
+    }
+
+    .showButton {
+        margin: 0;
+        background: none;
+        border: none;
+        font-size: 18px;
+        content: "<";
+        transform: rotate(90deg);
+    }
+
+    .borderRight {
+        width: 1px;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.17);
+    } 
+}
