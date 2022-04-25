@@ -166,6 +166,7 @@
         width: 100%;
         height: 112px;
         flex-direction: row;
+        perspective: 5000px;
     }
 
     .containerInnerContent {

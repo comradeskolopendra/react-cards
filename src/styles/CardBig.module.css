@@ -8,7 +8,9 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.5s ease-in-out;
+    /* transform: rotateY(180deg); */
+    perspective: 5000px;
 }
 
 .cardTitle {
@@ -35,6 +37,22 @@
     flex: 0 0 auto;
     box-sizing: border-box;
     font-family: Lato,sans-serif;
+}
+
+.cardParagraphReverse {
+    text-align: center;
+    color: hsla(0,0%,100%,.5);
+    font-size: .75rem;
+    line-height: 1.43;
+    margin: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    box-sizing: border-box;
+    font-family: Lato,sans-serif;
+}
+
+.displayNone {
+    display: none;
 }
 
 .cardMeduim {
@@ -163,11 +181,26 @@
 }
 
 .reverseCard {
-    transform: rotateX(180deg);
+    width: 100%;
+    height: 430px;
+    background-color: #2063b2;
+    border-radius: 5px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: transform 0.5s ease-in-out;
+    transform: rotateY(180deg);
+    perspective: 5000px;
 }
 
 .containerText {
     margin-top: 35px;
+}
+
+.displayFlex {
+    display: flex;
 }
 
 .containerInnerContent {
@@ -178,8 +211,102 @@
     align-items: center;
 }
 
+.containerReverseContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: rotateY(180deg);
+    width: 100%;
+    height: 100%;
+}
+
+.containerContentHeader {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 92px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.containerContentHeader::after {
+    width: 100%;
+    background-color: red;
+    margin: auto;
+}
+
+.borderBottomReverse {
+    background-color: rgba(165, 165, 165, 0.1);
+    color: rgba(165, 165, 165, 0.1);
+    width: calc(100% - 55px);
+    height: 0.5px;
+    margin: 0;
+}
+
+.containerReverseText {
+    margin: 0 15px;
+}
+
+.containerReverseImageText {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.cardTitleReverse {
+    text-align: left;
+    font-size: 0.95rem;
+    font-family: Lato,sans-serif;
+    line-height: 1.5;
+    letter-spacing: .3px;
+    letter-spacing: .01875rem;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    text-transform: none;
+    color: #fff;
+    margin: 0;
+}
+
+.cardLeftside {
+    display: flex;
+    flex-direction: row;
+    margin-left: 25px;
+}
+
 .containerShowButton {
     display: none;
+}
+
+.reverseImage {
+    width: 75px;
+    margin: 0 5px;
+}
+
+.downoladCirculations {
+    background: transparent;
+    color: #fff;
+    border: 1px solid #ffe366;
+    width: 180px;
+    height: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+    font-size: 0.8rem;
+}
+
+.downoladCirculations:hover {
+    color: rgba(255, 255, 255, 0.5)
+}
+
+.backButton {
+    color: #fff;
+    background: none;
+    border: none;
+}
+
+.cardRightside {
+    margin-right: 25px;
 }
 
 @media screen and (max-width: 1024px) {

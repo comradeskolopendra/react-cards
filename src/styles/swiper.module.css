@@ -1,0 +1,7 @@
+.containerSwiper {
+    max-width: 200px;
+}
+
+.swiperSlide {
+    display: flex;
+}
