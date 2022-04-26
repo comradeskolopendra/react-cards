@@ -1,7 +1,23 @@
-.containerSwiper {
-    max-width: 200px;
+* {
+    backface-visibility: visible;
 }
 
-.swiperSlide {
+.sliderItem {
+    /* max-width: 520px; */
+    /* transform: translateZ(0); */
+    backface-visibility: visible!important;
+    width: 100%!important;
+    height: 100%;
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerSwiper {
+    width: 100%;
+    height: 300px;
+}
+
+.button {
+    background-color: red;
 }
