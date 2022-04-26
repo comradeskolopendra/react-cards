@@ -9,15 +9,30 @@
     width: 100%!important;
     height: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items:  flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .containerSwiper {
-    width: 100%;
+    width: 500px!important;
     height: 300px;
 }
 
 .button {
     background-color: red;
+}
+
+.itemCirc {
+    margin: 7px;
+    border: 1px solid #fff;
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .6875rem;
 }
