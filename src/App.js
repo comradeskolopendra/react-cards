@@ -18,9 +18,9 @@ const imageArray = [
 
 function App() {
   const [cardData, setCardData] = useState([
-    {id: 1, title: "Bingo Club 37", bodyShadow: "Ставка от 100 ₸", image: imageArray[0]},
-    {id: 2, title: "Keno Club", bodyShadow: "Ставка от 250 ₸ или 250 Б", image: imageArray[1]},
-    {id: 3, title: "Bingo Club 38", bodyShadow: "Ставка от 100 ₸", image: imageArray[2]},
+    {id: 1, title: "Bingo Club 37", bodyShadow: "Ставка от 100 ₸", image: imageArray[0], type: 1},
+    {id: 2, title: "Keno Club", bodyShadow: "Ставка от 250 ₸ или 250 Б", image: imageArray[1], type: 2},
+    {id: 3, title: "Bingo Club 38", bodyShadow: "Ставка от 100 ₸", image: imageArray[2], type: 1},
     {id: 4, title: "Naval Battle", bodyShadow: "Ставка от 200 ₸ или 200 Б", image: imageArray[3]},
     {id: 5, title: "Bingo Club", bodyShadow: "Ставка от 200 ₸ или 200 Б", image: imageArray[4]}
   ]);
