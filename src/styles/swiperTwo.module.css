@@ -23,6 +23,7 @@
     justify-content: space-between;
     align-items: center;
     width: 70%;
+    margin: 10px 0 5px 0;
 }
 
 h6 {
@@ -34,6 +35,7 @@ h6 {
 p {
     font-size: 0.75rem;
     color: hsla(0,0%,100%,.5);
+    margin: 0;
 }
 
 .circulations {
@@ -50,8 +52,8 @@ p {
 }
 
 .containerSwiper {
-    width: 500px!important;
-    height: 300px;
+    width: 400px!important;
+    height: 140px;
 }
 
 .button {
@@ -79,13 +81,13 @@ p {
 
 .nextBtn {
     position: absolute;
-    top: 40%;
-    right: -45px;
+    top: 97%;
+    right: 15%;
     cursor: pointer;
     transform: rotateY(180deg);
     border: 1px solid #fff;
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -94,12 +96,12 @@ p {
 
 .prevBtn {
     position: absolute;
-    top: 40%;
-    left: -45px;
+    top: 97%;
+    left: 15%;
     cursor: pointer;
     border: 1px solid #fff;
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -116,20 +118,15 @@ p {
 }
 
 @media screen and (max-width: 1024px) {
-    .nextBtn, .prevBtn {
-        display: none
-    }
-
-    .slideHeader {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        width: 70%;
-        margin: 10px 0;
-    }
-
     .containerSwiper {
         width: 100%!important;
+    }
+
+    .nextBtn {
+        display: none;
+    }
+
+    .prevBtn {
+        display: none;
     }
 }

@@ -27,7 +27,9 @@ export default function SwiperTest() {
   return (
     <div className={styles.containerSwiper}>
         <div  className={styles.prevBtn} ref={prevRef}>
-          prev
+          <svg width="13" height="13" viewBox="0 0 49 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M48.5 1L2 26.5L48.5 52" stroke="white" strokeWidth="4"/>
+          </svg>
         </div>
       <Swiper
         // install Swiper modules
@@ -100,7 +102,9 @@ export default function SwiperTest() {
         </div>
       </Swiper>
       <div className={styles.nextBtn} ref={nextRef}>
-          next
+        <svg width="13" height="13" viewBox="0 0 49 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M48.5 1L2 26.5L48.5 52" stroke="white" strokeWidth="4"/>
+        </svg>
       </div>
     </div>
   );
